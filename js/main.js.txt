@@ -1,0 +1,18 @@
+// ===== سكريبت الموقع الرئيسي (متجر Wano) =====
+
+// وظيفة لإضافة المنتج للسلة
+function addToCart(productName) {
+  alert(`تم إضافة ${productName} إلى السلة ✅`);
+}
+
+// تفعيل كل أزرار "أضف للسلة"
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.product-card button');
+  
+  buttons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      const productName = button.parentElement.querySelector('h2').innerText;
+      addToCart(productName);
+    });
+  });
+});

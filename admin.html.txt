@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>لوحة تحكم Wano</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">لوحة تحكم Wano</div>
+  <nav>
+    <a href="index.html">رجوع للمتجر</a>
+  </nav>
+</header>
+
+<main class="products">
+  <h1>تحكم في الموقع</h1>
+
+  <section class="admin-controls">
+    <button onclick="alert('إضافة منتج جديد')">إضافة منتج</button>
+    <button onclick="alert('تعديل منتج')">تعديل منتج</button>
+    <button onclick="alert('حذف منتج')">حذف منتج</button>
+    <button onclick="toggleAds()">تفعيل/تعطيل الإعلانات</button>
+  </section>
+</main>
+
+<footer>
+  <p>لوحة تحكم مدير Wano © 2025</p>
+</footer>
+
+<script src="js/admin.js"></script>
+</body>
+</html>
